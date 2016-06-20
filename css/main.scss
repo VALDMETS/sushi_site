@@ -1,0 +1,128 @@
+@import 'variables';
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  color: $color-main;
+  margin: 0;
+  h3 {
+    font-size: 12px;
+    letter-spacing: 1em;
+  }
+  h1 {
+    // margin: 0 5% 10% 5%;
+    // font-size: 8vw;
+    font-weight: 400;
+  }
+  .top-nav {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    button {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      box-shadow: none;
+      border: 4px solid $color-main;
+      border-radius: 50%;
+      background: none;
+      vertical-align: top;
+      font-size: 20px;
+      color: $color-main;
+    }
+  }
+  .tabs {
+    display: block;
+    margin: 40px 0 40px 0;
+    padding: 0;
+    height: 100px;
+    width: 100%;
+    div {
+      display: block;
+      height: 100px;
+      width: 20%;
+      margin: 0;
+      float: left;
+    }
+    .feature {
+      background-color: red;
+    }
+    .food {
+      background-color: orange;
+    }
+    .drink {
+      background-color: yellow;
+    }
+    .special {
+      background-color: green;
+    }
+    .delivery {
+      background-color: blue;
+    }
+  }
+  .menu-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    .food-cont {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      width: 80%;
+      height: 50vw;
+      background-color: $color-main;
+      padding: 9vw 0;
+      box-sizing: border-box;
+      .food-icon {
+        height: 32vw;
+        width: 40%;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 50%;
+        i {
+          font-size: 16vw;
+          line-height: 32vw;
+        }
+      }
+    }
+    h2 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+      margin: 0 5%;
+    }
+  }
+}
+
+@media (min-width: 510px) {
+  body .menu-item {
+    padding-bottom: 11vw;
+    text-align: left;
+    .food-cont {
+      display: inline-block;
+      width: 40%;
+      height: 25vw;
+      padding: 4.5vw 0;
+      float: left;
+      .food-icon {
+        height: 16vw;
+        width: 40%;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 50%;
+        i {
+          font-size: 8vw;
+          line-height: 16vw;
+        }
+      }
+    }
+    h2 {
+      margin-left: 20px;
+    }
+    p {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+}
