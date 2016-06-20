@@ -58,6 +58,7 @@ body {
         border-bottom: none;
         border-top: 3px solid $color-main;
         border-right: 1px solid $color-main;
+        box-sizing: border-box;
         i {
           color: $color-main;
         }
@@ -126,6 +127,7 @@ body {
 @media (min-width: 510px) {
   body {
     header {
+      padding-bottom: 1px;
       border-bottom: 1px solid $color-main;
       margin-bottom: 30px;
       .tabs {
@@ -151,7 +153,9 @@ body {
         .feature {
           border-top: 3px solid $color-main;
           border-left: 1px solid $color-main;
-          border-bottom: none;
+          border-bottom: 2px solid white;
+          box-sizing: content-box;
+          height: 47px;
         }
         .food {
           border: 1px solid $color-fade;
@@ -232,6 +236,7 @@ body {
     max-width: 1320px;
     margin: 0 auto;
     header {
+      padding-bottom: 0;
       h3 {
         text-align: left;
         display: block;

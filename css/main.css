@@ -47,7 +47,8 @@ body {
     body header .tabs .feature {
       border-bottom: none;
       border-top: 3px solid #47A3DA;
-      border-right: 1px solid #47A3DA; }
+      border-right: 1px solid #47A3DA;
+      box-sizing: border-box; }
       body header .tabs .feature i {
         color: #47A3DA; }
     body header .tabs .food {
@@ -96,6 +97,7 @@ body {
     font-size: 15px; } }
 @media (min-width: 510px) {
   body header {
+    padding-bottom: 1px;
     border-bottom: 1px solid #47A3DA;
     margin-bottom: 30px; }
     body header .tabs {
@@ -119,7 +121,9 @@ body {
       body header .tabs .feature {
         border-top: 3px solid #47A3DA;
         border-left: 1px solid #47A3DA;
-        border-bottom: none; }
+        border-bottom: 2px solid white;
+        box-sizing: content-box;
+        height: 47px; }
       body header .tabs .food {
         border: 1px solid #CBCBCB;
         border-bottom: none; }
@@ -175,44 +179,46 @@ body {
   body {
     max-width: 1320px;
     margin: 0 auto; }
-    body header h3 {
-      text-align: left;
-      display: block;
-      margin-left: 40px; }
-    body header h1 {
-      margin-left: 40px;
-      display: inline-block;
-      float: left; }
-    body header .top-nav {
-      margin-top: 21.44px;
-      margin-right: 30px;
-      float: right; }
-    body header .tabs {
-      width: 100%;
-      display: block;
-      margin-top: 120px; }
-      body header .tabs div {
-        max-width: 140px;
-        vertical-align: top; }
-      body header .tabs .feature:after {
-        content: "Shop";
-        font-size: 20px; }
-      body header .tabs .food:after {
-        color: #CBCBCB;
-        content: "Food";
-        font-size: 20px; }
-      body header .tabs .drink:after {
-        color: #CBCBCB;
-        content: "Drink";
-        font-size: 20px; }
-      body header .tabs .special:after {
-        color: #CBCBCB;
-        content: "Specials";
-        font-size: 20px; }
-      body header .tabs .delivery:after {
-        color: #CBCBCB;
-        content: "Delivery";
-        font-size: 20px; }
+    body header {
+      padding-bottom: 0; }
+      body header h3 {
+        text-align: left;
+        display: block;
+        margin-left: 40px; }
+      body header h1 {
+        margin-left: 40px;
+        display: inline-block;
+        float: left; }
+      body header .top-nav {
+        margin-top: 21.44px;
+        margin-right: 30px;
+        float: right; }
+      body header .tabs {
+        width: 100%;
+        display: block;
+        margin-top: 120px; }
+        body header .tabs div {
+          max-width: 140px;
+          vertical-align: top; }
+        body header .tabs .feature:after {
+          content: "Shop";
+          font-size: 20px; }
+        body header .tabs .food:after {
+          color: #CBCBCB;
+          content: "Food";
+          font-size: 20px; }
+        body header .tabs .drink:after {
+          color: #CBCBCB;
+          content: "Drink";
+          font-size: 20px; }
+        body header .tabs .special:after {
+          color: #CBCBCB;
+          content: "Specials";
+          font-size: 20px; }
+        body header .tabs .delivery:after {
+          color: #CBCBCB;
+          content: "Delivery";
+          font-size: 20px; }
     body .menu-item {
       width: 30%;
       margin-left: 1%;
