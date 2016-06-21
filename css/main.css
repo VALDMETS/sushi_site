@@ -21,10 +21,15 @@ body {
       box-shadow: none;
       border: 4px solid #47A3DA;
       border-radius: 50%;
-      background: none;
+      background: white;
       vertical-align: top;
       font-size: 20px;
-      color: #47A3DA; }
+      color: #47A3DA;
+      box-sizing: border-box; }
+    body header .top-nav button:hover {
+      transition: .3s;
+      color: #0C6AB1;
+      border: 4px solid #0C6AB1; }
   body header .tabs {
     display: block;
     margin: 40px 0 40px 0;
@@ -47,7 +52,6 @@ body {
     body header .tabs .feature {
       border-bottom: none;
       border-top: 3px solid #47A3DA;
-      border-right: 1px solid #47A3DA;
       box-sizing: border-box; }
       body header .tabs .feature i {
         color: #47A3DA; }
@@ -83,6 +87,12 @@ body {
         body .menu-item .food-cont .food-icon i {
           font-size: 16vw;
           line-height: 32vw; }
+    body .menu-item .food-cont:hover {
+      transition: .3s;
+      background-color: #0C6AB1; }
+      body .menu-item .food-cont:hover .food-icon i {
+        transition: .3s;
+        color: #0C6AB1; }
     body .menu-item .food-text h2 {
       font-size: 16px; }
     body .menu-item .food-text p {

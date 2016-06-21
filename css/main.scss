@@ -27,10 +27,16 @@ body {
         box-shadow: none;
         border: 4px solid $color-main;
         border-radius: 50%;
-        background: none;
+        background: white;
         vertical-align: top;
         font-size: 20px;
         color: $color-main;
+        box-sizing: border-box;
+      }
+      button:hover {
+        transition: .3s;
+        color: $color-hover;
+        border: 4px solid $color-hover;
       }
     }
     .tabs {
@@ -57,7 +63,7 @@ body {
       .feature {
         border-bottom: none;
         border-top: 3px solid $color-main;
-        border-right: 1px solid $color-main;
+        // border-right: 1px solid $color-main;
         box-sizing: border-box;
         i {
           color: $color-main;
@@ -104,6 +110,14 @@ body {
         }
       }
     }
+    .food-cont:hover {
+        transition: .3s;
+        background-color: $color-hover;
+        .food-icon i {
+          transition: .3s;
+          color: $color-hover;
+        }
+      }
     .food-text {
       h2 {
         font-size: 16px;
